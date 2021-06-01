@@ -5,9 +5,11 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace Pritner3D.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class InputController : ApiController
     {
         print_storageEntities ctx = new print_storageEntities();

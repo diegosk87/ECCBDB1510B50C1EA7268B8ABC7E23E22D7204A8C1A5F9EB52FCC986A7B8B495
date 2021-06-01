@@ -111,3 +111,6 @@ D:\Users\Diego Noveron\Documents\Projects\Visual C#\Pritner3D\Pritner3D\bin\es\S
 D:\Users\Diego Noveron\Documents\Projects\Visual C#\Pritner3D\Pritner3D\obj\Debug\Pritner3D.csprojResolveAssemblyReference.cache
 D:\Users\Diego Noveron\Documents\Projects\Visual C#\Pritner3D\Pritner3D\obj\Debug\Pritner3D.dll
 D:\Users\Diego Noveron\Documents\Projects\Visual C#\Pritner3D\Pritner3D\obj\Debug\Pritner3D.pdb
+D:\Users\Diego Noveron\Documents\Projects\Visual C#\Pritner3D\Pritner3D\bin\System.Web.Cors.dll
+D:\Users\Diego Noveron\Documents\Projects\Visual C#\Pritner3D\Pritner3D\bin\System.Web.Http.Cors.dll
+D:\Users\Diego Noveron\Documents\Projects\Visual C#\Pritner3D\Pritner3D\bin\System.Web.Http.Cors.xml

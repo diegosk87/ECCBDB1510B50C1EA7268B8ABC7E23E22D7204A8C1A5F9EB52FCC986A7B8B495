@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="print_storageModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="input">
+    <Key>
+      <PropertyRef Name="idInput" />
+    </Key>
+    <Property Name="idInput" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="preparationTime" Type="Int32" />
+    <Property Name="stock" Type="Int32" />
+    <Property Name="isBaseInput" Type="Byte" />
+  </EntityType>
+  <EntityType Name="input_composition">
+    <Key>
+      <PropertyRef Name="idInput" />
+      <PropertyRef Name="idComplementInput" />
+    </Key>
+    <Property Name="idInput" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idComplementInput" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="quantity" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="print_storageEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="inputs" EntityType="Self.input" />
+    <EntitySet Name="input_composition" EntityType="Self.input_composition" />
+  </EntityContainer>
+</Schema>

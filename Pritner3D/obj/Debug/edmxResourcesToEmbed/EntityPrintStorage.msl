@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="print_storageModelStoreContainer" CdmEntityContainer="print_storageEntities">
+    <EntitySetMapping Name="inputs">
+      <EntityTypeMapping TypeName="print_storageModel.input">
+        <MappingFragment StoreEntitySet="input">
+          <ScalarProperty Name="idInput" ColumnName="idInput" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="preparationTime" ColumnName="preparationTime" />
+          <ScalarProperty Name="stock" ColumnName="stock" />
+          <ScalarProperty Name="isBaseInput" ColumnName="isBaseInput" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="input_composition">
+      <EntityTypeMapping TypeName="print_storageModel.input_composition">
+        <MappingFragment StoreEntitySet="input_composition">
+          <ScalarProperty Name="idInput" ColumnName="idInput" />
+          <ScalarProperty Name="idComplementInput" ColumnName="idComplementInput" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

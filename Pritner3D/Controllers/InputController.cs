@@ -25,14 +25,24 @@ namespace Pritner3D.Controllers
                                      where A.idInput == idInput
                                      select new
                                      {
-                                        idInput = A.idComplementInput,
-                                        name = B.name,
-                                        quantity = A.quantity,
-                                        preparationTime = B.preparationTime,
-                                        stock = B.stock
+                                         idInput = A.idComplementInput,
+                                         name = B.name,
+                                         quantity = A.quantity,
+                                         preparationTime = B.preparationTime,
+                                         stock = B.stock
                                      });
 
             return Ok(inputCompositions);
+        }
+
+        [HttpPut]
+        public IHttpActionResult SetInput(string idInput)
+        {
+            var input = ctx.inputs.Find(idInput);
+            input.stock = input.stock + 1;
+            ctx.SaveChanges();
+
+            return Ok();
         }
     }
 }
